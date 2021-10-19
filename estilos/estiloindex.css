@@ -1,0 +1,67 @@
+body {
+  display: grid;
+	grid-template-rows: auto auto auto auto ;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "head head head head"
+                        "main main main menu"
+                        "main main main menu"
+                        "pie pie pie pie";
+  grid-gap: 2px;
+  align-items: center;
+  justify-items: center;
+}
+
+
+ul {
+	
+    font-style: italic;
+    list-style-type: circle;
+    list-style-position: inside
+}
+
+
+header{
+	grid-area: head;
+  border: 3px solid black;
+  padding:5px;
+}
+
+
+
+footer{
+  display:grid;
+  grid-auto-columns: auto auto auto;
+  grid-auto-rows: auto;
+  grid-template-areas: "sec sec vid";
+  grid-column-gap: 20px;
+}
+
+footer > section {
+  grid-area:sec;
+}
+
+footer > video {
+  grid-area:vid;
+  
+}
+
+main{
+	grid-area: main;
+  border: 3px solid black;
+  padding:5px;
+}
+
+aside{
+	grid-area: menu;
+  border: 3px solid black;
+  padding:5px;
+}
+
+footer{
+	grid-area: pie;
+  border: 3px solid black;
+  padding:5px;
+}
+
+
+

@@ -1,0 +1,79 @@
+body {
+	font-family: Tahoma, sans-serif;
+  color: #000000;
+  background-color:#DEB887; 
+	text-align:justify;
+}
+
+
+h1 {
+  color: #fff;    
+  text-transform: uppercase;
+  text-align: center;  
+  font-size: 30px;	
+}
+
+
+h2{
+ text-transform: uppercase;
+ font-weight: lighter;
+ text-align: center; 
+}
+
+header > p {
+	font-style: italic;
+}
+
+header > p, main > section> p, footer > section> p{
+  background-color: #EAD6B3;
+}
+
+
+header{
+  display:grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title"
+                      "nav nav nav nav";
+  justify-items: center;
+  align-items: center;
+}
+
+header>h1{
+  grid-area: title;
+}
+
+header>nav{
+  grid-area:nav;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "home publis prem form";
+  grid-column-gap: 150px;
+  justify-items: stretch;
+  
+}
+
+header > nav > a:first-of-type{
+  grid-area: home;
+  background-color: #EAD6B3;
+  padding:10px;
+}
+
+header > nav > a:nth-child(2){
+  grid-area: publis;
+  background-color: #EAD6B3;
+  padding:10px;
+}
+header > nav > a:nth-child(3){
+  grid-area: prem;
+  background-color: #EAD6B3;
+  padding:10px;
+}
+
+header > nav > a:last-child{
+  grid-area: form;
+  background-color: #EAD6B3;
+  padding:10px;
+}
+
+
+

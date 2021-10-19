@@ -1,0 +1,44 @@
+
+form{
+	display:grid;
+	background-color: burlywood;
+	border: 1px solid black;
+	margin: 20px;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns:auto auto;
+	grid-template-areas: "head head"
+						"info check"
+						"rad ask"
+						"op op";
+	justify-items: center;
+	grid-column-gap: 10px;
+	grid-row-gap:20px;
+}
+
+header {
+	grid-area: head;
+}
+
+form > section:first-of-type{
+	grid-area: info;
+	align-items: center;
+}
+
+
+form > section:nth-of-type(2){
+	grid-area: ask;
+	margin-right: 20px;
+}
+
+form > fieldset:first-of-type{
+	grid-area: rad;
+	margin-left: 20px;
+
+}
+
+form > fieldset:last-of-type{
+	grid-area: check;
+}
+form > section:last-of-type{
+	grid-area: op;
+}

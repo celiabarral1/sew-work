@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>SEW.P1</title>
+    <link rel="stylesheet" href="estilos/estilo.css"/>
+    <link rel="stylesheet" href="estilos/estiloform.css"/>
+    <meta name="author" content= "Celia Barral" />
+    <meta name="description" content="Formulario de opinión sobre Margaret Hamilton y sus aportaciones. " />
+    <meta name="keywords" content="Margaret, Apolo, matemáticas, MIT, software, NASA" />
+</head>
+
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <form>
+        <header>
+            <h1>Formulario de opinión sobre Margaret Hamilton</h1>
+            <nav>
+                <a href="">Home</a>
+                <a href="publicaciones.html">Publicaciones</a>
+                <a href="premios.html">Premios</a>
+                <a href="opiniones.html">Formulario</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Información de contacto: </h2>
+            <p><label>Nombre:   <input type="text" autofocus="autofocus"></label></p>
+            <p><label>Apellidos:    <input type="text"></label></p>
+            <p><label>E-mail:   <input type="email"></label></p>
+            <p><label>Fecha de nacimiento:  <input type="date"></label></p>
+        </section>
+        <section>
+            <h2>Principales aspectos de Margaret Hamilton </h2>
+            <p><label>¿Qué sabes de Margaret Hamilton?<br><textarea cols="70" rows="8" ></textarea> </label></p>
+        </section>
+            <fieldset>
+                <legend>¿Cuál dirías que es su aportación más destacada?</legend>
+                <p><label> <input name="aportaciones" type=radio> Diseñó el software para predecir el tiempo.  </label></p>
+                <p><label> <input name="aportaciones" type=radio> Proyecto SAGE. Desarrolló el software para buscar aeronaves desconocidas en el espacio aéreo norteamericano. </label></p>
+                <p><label> <input name="aportaciones" type=radio> Su trabajo en la NASA, como en la Misión Apolo 11. </label></p>
+            </fieldset>
+            <fieldset>
+                <legend>¿Sabrías decir que premios recibió?</legend>
+                <p><label> <input name="premios" type=checkbox> Outstanding Alumni Award </label></p>
+                <p><label> <input name="premios" type=checkbox> Premio Augusta Ada Lovelace Award </label></p>
+                <p><label> <input name="premios" type=checkbox> Premio Nobel </label></p>
+                <p><label> <input name="premios" type=checkbox> Premio Princesa de Asturias </label></p>
+                <p><label> <input name="premios" type=checkbox> NASA Exceptional Space Act Award </label></p>
+            </fieldset>
+        <section>
+            <h2>En tu opinión... </h2>
+            <p>
+                <label for="unittype">¿Crees que debería enseñarse más sobre mujeres científicas como Margaret?</label>
+                <select id="unittype" name="unittype">
+                 <option value="1" selected> Sí </option>
+                 <option value="2"> No </option>
+                </select>
+            </p>
+            <p>
+                <label>
+                    Del 1 al 10, ¿cuánto crees que se da a conocer a mujeres científicas frente a hombres?
+                    <input type="number" min="1" max="10" step="1">
+                </label>
+            </p>
+        </section>
+    </form>
+
+</body>
+</html>
